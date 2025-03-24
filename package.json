@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@dnd-kit/core": "^6.3.1",
     "@dnd-kit/sortable": "^10.0.0",
     "@faker-js/faker": "^9.6.0",
     "@react-spring/web": "^9.7.5",
+=======
+>>>>>>> 0af4eb9 (Initial commit)
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "@use-gesture/react": "^10.3.1",
     "bootstrap": "^5.3.3",
     "faker": "^6.6.6",
@@ -21,6 +25,10 @@
     "react-draggable": "^4.4.6",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.4.0",
+=======
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+>>>>>>> 0af4eb9 (Initial commit)
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
