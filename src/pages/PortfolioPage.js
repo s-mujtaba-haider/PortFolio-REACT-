@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext} from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
@@ -6,19 +6,12 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import SocialMedia from '../components/SocialMedia';
+import DarkModeToggle from '../components/DarkModeToggle';
 import { PortfolioContext } from '../App';
-import { FaSun, FaMoon } from 'react-icons/fa';
 
 function PortfolioPage() {
     const { portfolioData } = useContext(PortfolioContext);
-    const [darkMode, setDarkMode] = useState(false);
-
-    useEffect(() => {
-        document.body.className = darkMode ? 'bg-dark text-light' : 'bg-light text-dark';
-    }, [darkMode]);
-
-
-
+    
     if (!portfolioData || !portfolioData.name) {
         return <div className='container text-center mt-5'><h2>Please Enter Data Again.</h2></div>;
     }
@@ -59,12 +52,9 @@ function PortfolioPage() {
 
             <Footer />
 
-        <button 
-             className="btn btn-outline-primary position-fixed" 
-             style={{ bottom: '20px', right: '20px', borderRadius: '50%', width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-                onClick={() => setDarkMode(!darkMode)}>
-                {darkMode ? <FaSun /> : <FaMoon />}
-         </button>
+            <DarkModeToggle />
+
+        
 
 
 

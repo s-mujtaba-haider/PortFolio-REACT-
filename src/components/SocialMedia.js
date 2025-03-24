@@ -51,7 +51,7 @@ function SocialMedia() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-outline-primary btn-sm d-flex align-items-center justify-content-center gap-2"
+              className="btn btn-outline-success btn-sm d-flex align-items-center justify-content-center gap-2"
               style={{ width: "150px", margin: "auto" }}
             >
               {getSocialIcon(link.name)} {link.name}

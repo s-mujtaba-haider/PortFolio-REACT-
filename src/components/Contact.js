@@ -39,7 +39,7 @@ const Contact = () => {
                     <label className="form-label">Message</label>
                     <textarea className="form-control" name="message" value={formData.message} onChange={handleChange} rows="2" required></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary w-100">Send Message</button>
+                <button type="submit" className="btn btn-success w-100">Send Message</button>
                 {successMessage && <p className="text-success text-center mt-3">{successMessage}</p>}
             </form>
         </div>

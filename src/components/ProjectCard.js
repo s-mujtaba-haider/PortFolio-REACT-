@@ -39,7 +39,7 @@ function ProjectCard({ title, description, image, github }) {
         
 
 
-                <a href={github} target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-auto">
+                <a href={github} target="_blank" rel="noopener noreferrer" className="btn btn-success mt-auto">
                     View on GitHub
                 </a>
             </div>
