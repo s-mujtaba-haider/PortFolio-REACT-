@@ -1,139 +1,83 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
-=======
-<<<<<<< HEAD
-# PortFolio REACT
 1. Data Entry Page
->>>>>>> 0af4eb9 (Initial commit)
+ Purpose:
+All the content displayed in the portfolio must be provided by the user on a preceding page.
+ Features:
+o Input fields to capture all necessary data including:
+ Student’s name, bio, and other introductory details.
+ About Me information (profile picture, skills, interests, and detailed
+description).
+ Project details (title, description, image, GitHub link for each project).
+ Social media links where each link includes a “Name” and “URL”.
+o An "Add Social Media" button that allows the user to add multiple social media entries.
+o A "Submit/Generate" button that, when pressed, generates the portfolio page using the
+entered data.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. Navigation Bar (Navbar Component)
+ Features:
+o A responsive navigation bar that adjusts to different screen sizes.
+o Contains links to major sections of the page (e.g., Home, About, Projects, Contact).
+o Implements a hamburger menu or dropdown for mobile views using useState to
+toggle its visibility.
 
-## Available Scripts
+3. Hero Section
+ Features:
+o A welcoming section displaying the student’s name, a short bio, and a call-to-action
+button (e.g., "View My Work" or "Contact Me").
+o Receives dynamic data (name and description) via props.
 
-In the project directory, you can run:
+4. About Me Section
+ Features:
+o A section detailing personal information, skills, and interests.
+o Customizable using props to pass in:
+ Profile picture.
+ List of skills.
+ Short description or extended biography.
 
-### `npm start`
+5. Projects Section
+ Features:
+o Displays at least 3 projects using a ProjectCard component.
+o Each ProjectCard should receive as props:
+ Project title.
+ Description.
+ Image.
+ GitHub link.
+o The projects data should be stored in an array in the parent component and mapped
+over to render multiple ProjectCard components.
+o Draggable Cards:
+ The project cards should be draggable, enabling users to rearrange them (move
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+up, down, etc.). External libraries (e.g., react-draggable or react-
+beautiful-dnd) can be used to implement this functionality.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+o Dynamic Data Fetching:
+ It is mandatory to fetch project data dynamically (e.g., from a drive or GitHub).
+ Use useEffect to retrieve this data and update the Projects section
+automatically as changes occur.
 
-### `npm test`
+6. Contact Section
+ Features:
+o A contact form with input fields for name, email, and message.
+o Utilizes useState to manage the form’s input values.
+o Uses useEffect to display a success message upon successful form submission.
+o Search google for linking a form with your website.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+7. Footer
 
-### `npm run build`
+ Features:
+o A simple footer that includes social media links (e.g., LinkedIn, GitHub, Twitter).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+8. Extra Features
+8.1 Dark Mode Toggle
+ Features:
+o Implement a button using useState that toggles between light and dark themes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+8.2 Dynamic Data Fetching for Projects
+ Features:
+o Mandatory dynamic fetching of project data.
+o Data can be fetched from external sources such as Google Drive or GitHub.
+o Utilize useEffect to fetch and update the Projects section as changes occur.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-<<<<<<< HEAD
-=======
 8.3 Animated Elements
  Features:
 o Enhance user experience by integrating CSS animations or a library such as Framer
 Motion for smooth transitions and interactive feedback.
-=======
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
->>>>>>> 0af4eb9 (Initial commit)
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-<<<<<<< HEAD
-=======
->>>>>>> ef93f45 (Initialize project using Create React App)
->>>>>>> 0af4eb9 (Initial commit)
